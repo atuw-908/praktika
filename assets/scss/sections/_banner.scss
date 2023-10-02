@@ -1,0 +1,133 @@
+.banner {
+
+    padding: 50px 0;
+
+    &-row {
+        padding-top: 50px;
+        display: flex;
+        gap: 16px;
+        @extend %trn;
+
+
+        @include media (970) {
+        
+            flex-flow: column-reverse wrap;
+            @include flex (center,center)
+
+        }
+
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        width: calc(50%-8px);
+    }
+
+    &-title {
+        color: $black-color;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 133.687%;
+        margin-bottom: 24px;
+        @extend %trn;
+
+
+        @include media (1128) {
+        
+        font-size: 32px;
+        margin-bottom: 12px;    
+
+        }
+
+        @include media (970) {
+
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 24px;
+        }
+
+        @include media (410) {
+
+            font-size: 34px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &-title span {
+        color: $red-color;
+    }
+
+    &-text {
+        color: #30444E;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 144.687%;
+        margin-bottom: 24px;
+        @extend %trn;
+
+
+        @include media (1128px) {
+            font-size: 10px;
+            margin-bottom: 12px;
+        }
+
+        @include media (970) {
+
+            text-align: center;
+            font-size: 24px;
+        }
+
+        @include media (410) {
+
+            font-size: 20px;
+        }
+    }
+
+    &-button {
+        max-width: 160px;
+        border-radius: 4px;
+        background: #EE4248;
+        color: #fff;
+        padding: 12px 32px;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 144.687%;
+        @extend %trn;
+
+        @include media (970) {
+
+            margin: 0 auto;
+
+        }
+
+    }
+
+    &-image {
+        width: calc(50%-8px);
+        @extend %trn;
+
+        &-imaga img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @include media (770) {
+            width: 75%
+        }
+
+        @include media (660) {
+            width: 100%;
+        }
+    
+        @include media (410) {
+            width: 100%;
+        }
+    
+    }
+
+   
+  
+
+}
